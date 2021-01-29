@@ -1,3 +1,4 @@
 FROM python
-COPY . /src
-CMD ["python", "/src/app.py"]
+COPY . /app
+WORKDIR /app
+CMD ["python", "app.py"]
